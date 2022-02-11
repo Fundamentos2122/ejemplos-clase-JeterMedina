@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover {
+            background-color: darkred;
+            color: white;
+        }
+
+        input[type="checkbox"]:checked{
+            box-shadow: green 4px 4px 10px;
+        }
+
+        input[type="text"]:focus{
+            border-width: 10px;
+        }
+        /*-------------------------------------------*/
+        p::first-letter{
+            font-size: 24px;
+        }
+
+        p::first-line{
+            font-style: italic;
+        }
+
+        P::selection{
+            background-color: yellow;
+        }
+
+        p.cita::before{
+            content: "\"";
+        }
+        p.cita::after{
+            content: "\"";
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Nombre">
+        <br>
+        <input type="checkbox">
+        <label>Check aqui</label>
+        <br>
+        <button>Enviar</button>
+    </form>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate voluptatem ratione, dolorum voluptatum fugiat ab commodi, reprehenderit quas reiciendis consectetur molestias dolores voluptate? Beatae sequi iusto aliquam ab dolores.</p>
+
+    <p class="cita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate voluptatem ratione, dolorum voluptatum fugiat ab commodi, reprehenderit quas reiciendis consectetur molestias dolores voluptate? Beatae sequi iusto aliquam ab dolores.</p>
+</body>
+</html>

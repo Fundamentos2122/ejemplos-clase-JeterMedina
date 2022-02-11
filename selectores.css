@@ -1,0 +1,40 @@
+/*Universal*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Por ID*/
+#p1 {
+    font-size: 18px;
+}
+/*Por etiqueta*/
+p{
+    border:  1px solid red;
+}
+/*Por atributo*/
+div[class]{
+    margin-left: 20px;
+}
+/*Busca valor exacto*/
+div[class="prueba"]{
+    color: pink;
+}
+/*Inicia por la palabra*/
+div[class|="prueba"]{
+    background-color: gray;
+}
+/*Terminar por el valor*/
+div[class$="prueba"]{
+    line-height: 30px;
+}
+/*Antes o despues puede o no existir espacio o nada*/
+div[class~="prueba"]{
+    letter-spacing: 5px;
+}
+
+div[class^="prueba"]{
+    border: solid 2px rgb(255, 220, 64);
+}
+
+div[class*="prueba"]{
+    text-decoration: underline;
+}
